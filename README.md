@@ -8,6 +8,7 @@
 >> - [x] Melhorar o SEO do site
 >> - [x] Organizar os Favicons
 >> - [x] Melhorar o manifest.json
->> - [ ] Instalar o React Bootstrap
->> 
+>> - [x] Instalação do React Bootstrap (v2.5.0-beta.1 (Bootstrap 5.2))
+>> - [x] Instalação do React Router Dom V6
+>
 > ### Iniciar a Home 
