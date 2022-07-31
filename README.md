@@ -11,4 +11,7 @@
 >> - [x] Instalação do React Bootstrap (v2.5.0-beta.1 (Bootstrap 5.2))
 >> - [x] Instalação do React Router Dom V6
 >
+> ### Dependencias de Test
+>> - [x] Instalação do React Testing Library
 > ### Iniciar a Home 
+>
