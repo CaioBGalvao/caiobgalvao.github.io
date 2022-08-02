@@ -1,24 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PortifolioContext from './context/PortifolioContext';
+import PortifolioProvider from './home/context/PortifolioProvider';
+import Home from './home/pages/Home';
+import NotFound from './home/pages/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <PortifolioContext>
+    <PortifolioProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-            <Route path="teams" element={<Teams />}>
-              <Route path=":teamId" element={<Team />} />
-              <Route path="new" element={<NewTeamForm />} />
-              <Route index element={<LeagueStandings />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </PortifolioContext>
+    </PortifolioProvider>
   );
 }
 
