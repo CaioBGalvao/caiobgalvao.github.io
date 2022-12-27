@@ -14,9 +14,9 @@ function Contacts() {
 	const [showSuccess, setShowSuccess] = useState(false);
 
 	const {
-    REACT_APP_SERVICE_ID,
-    REACT_APP_TEMPLATE_ID,
-    REACT_APP_PUBLIC_KEY} = process.env;
+    VITE_APP_SERVICE_ID,
+    VITE_APP_TEMPLATE_ID,
+    VITE_APP_PUBLIC_KEY} = import.meta.env;
 
 	const templateParams = {
 		fromName: name,
@@ -31,10 +31,10 @@ function Contacts() {
 		} else {
 			await emailjs
 				.send(
-          REACT_APP_SERVICE_ID || '',
-          REACT_APP_TEMPLATE_ID || '',
+          VITE_APP_SERVICE_ID || '',
+          VITE_APP_TEMPLATE_ID || '',
           templateParams,
-          REACT_APP_PUBLIC_KEY || '');
+          VITE_APP_PUBLIC_KEY || '');
 			setShowAlert(false);
 			setShowSuccess(true);
 			setTimeout(() => {
@@ -107,4 +107,3 @@ function Contacts() {
 }
 
 export default Contacts;
-
