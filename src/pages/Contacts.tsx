@@ -5,9 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import emailjs from '@emailjs/browser';
 import './Contacts.css';
-import.meta.env.VITE_APP_SERVICE_ID
-import.meta.env.VITE_APP_TEMPLATE_ID
-import.meta.env.VITE_APP_PUBLIC_KEY
+
 
 function Contacts() {
 	const [name, setName] = useState('');
