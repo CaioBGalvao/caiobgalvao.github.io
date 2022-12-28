@@ -11,3 +11,16 @@
   font-family: "Space Mono", monospace;
   font-size: clamp(1.5em, 1.5em + 1.5vw, 2em);
 }
+
+.my-custom-popover .popover-header {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+  background-color: #212529;
+  color: white;
+}
+
+.my-custom-popover .popover-body {
+  font-size: 1rem;
+  color: black;
+}
