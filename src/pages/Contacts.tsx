@@ -93,7 +93,7 @@ function Contacts() {
           />
         </Form.Group>
         <OverlayTrigger show={showSuccess} placement="top" overlay={popover}>
-          <Button className='mb-3' variant='primary' type='submit'>
+          <Button className='mb-3' variant='dark' type='submit'>
             Enviar
           </Button>
         </OverlayTrigger>
