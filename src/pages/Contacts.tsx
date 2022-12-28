@@ -6,17 +6,13 @@ import Alert from 'react-bootstrap/Alert';
 import emailjs from '@emailjs/browser';
 import './Contacts.css';
 
+
 function Contacts() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [showAlert, setShowAlert] = useState(false);
 	const [showSuccess, setShowSuccess] = useState(false);
-
-	const {
-    VITE_APP_SERVICE_ID,
-    VITE_APP_TEMPLATE_ID,
-    VITE_APP_PUBLIC_KEY} = import.meta.env;
 
 	const templateParams = {
 		fromName: name,
@@ -25,16 +21,20 @@ function Contacts() {
 		message,
 	};
 
+  const serviceId = import.meta.env.VITE_APP_SERVICE_ID
+  const templateId = import.meta.env.VITE_APP_TEMPLATE_ID
+  const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY
+
 	const sendEmail = async () => {
 		if (name === '' || email === '' || message === '') {
 			setShowAlert(true);
 		} else {
 			await emailjs
 				.send(
-          VITE_APP_SERVICE_ID || '',
-          VITE_APP_TEMPLATE_ID || '',
+          serviceId,
+          templateId,
           templateParams,
-          VITE_APP_PUBLIC_KEY || '');
+          publicKey);
 			setShowAlert(false);
 			setShowSuccess(true);
 			setTimeout(() => {
