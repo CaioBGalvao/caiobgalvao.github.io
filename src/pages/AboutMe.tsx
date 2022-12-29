@@ -10,7 +10,7 @@ function AboutMe() {
     <Container fluid className='container-about bg-light'>
       <h1 className='mt-5'>&lt; Sobre Mim &gt;</h1>
       <SobreMin />
-      <Link to='/Contact' className='mb-5'>
+      <Link to='/contact' className='mb-5'>
         <Button variant='dark'>Me envie um E-mail</Button>
       </Link>
     </Container >
