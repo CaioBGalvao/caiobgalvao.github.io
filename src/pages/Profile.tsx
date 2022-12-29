@@ -15,10 +15,10 @@ function Profile() {
       <h1 className='mt-2 mb-1'>&lt; Caio Galvão &gt;</h1>
       <h2 className='mt-2 mb-1'>Web Developer Full Stack (ele/dele)</h2>
       <div className='mt-5'>
-        <Link to='/AboutMe'>
+        <Link to='/aboutMe'>
           <Button variant='dark'>Sobre Mim</Button>
         </Link>
-        <Link to='/Contact' className='mx-2'>
+        <Link to='/contact' className='mx-2'>
           <Button variant='dark'>Me envie um E-mail</Button>
         </Link>
         <div className='d-flex justify-content-evenly mt-5'>

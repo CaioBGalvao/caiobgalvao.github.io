@@ -1,19 +1,31 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useRouteError } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import IErrorObject from '../Interfaces/IErrorObject';
+import MainNavigation from '../components/MainNavigation';
+import '../components/RootLayout.css';
 import './NotFound.css';
 
-function NotFound() {
-	return (
-		<Container fluid className='container-nfound bg-light'>
-			<h1>404 - Not Found</h1>
-			<p>Não há nada aqui.</p>
-			<Link to='/'>
-				<Button variant='dark'>Vamos para a home?</Button>
-			</Link>
-		</Container>
-	);
-}
+export default function ErrorPage() {
+  const error: IErrorObject = useRouteError() as IErrorObject;
+  console.error('Erro: ', error);
 
-export default NotFound;
+  return (
+    <>
+      <MainNavigation />
+      <main className='main-size'>
+        <Container fluid id="error-page" className='container-nfound bg-light'>
+          <h1>Oops!</h1>
+          <p>Sorry, an unexpected error has occurred.</p>
+          <p>
+            <i>{error.statusText || error.message}</i>
+          </p>
+          <Link to='/'>
+            <Button variant='dark'>Vamos para Home!</Button>
+          </Link>
+        </Container>
+      </main>
+    </>
+  );
+}

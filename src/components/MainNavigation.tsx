@@ -19,17 +19,17 @@ function MainNavigation() {
             </Link>
           </Nav.Link>
           <Nav.Link>
-            <Link to='/AboutMe' className='nav-button'>
+            <Link to='/aboutMe' className='nav-button'>
               <span className='hover-underline-animation'> Sobre Mim </span>
             </Link>
           </Nav.Link>
           <Nav.Link>
-            <Link to='/Contact' className='nav-button'>
+            <Link to='/contact' className='nav-button'>
               <span className='hover-underline-animation'> Contatos </span>
             </Link>
           </Nav.Link>
           <Nav.Link>
-            <Link to='Projects' className='nav-button'>
+            <Link to='projects' className='nav-button'>
               <span className='hover-underline-animation'> Projetos </span>
             </Link>
           </Nav.Link>
