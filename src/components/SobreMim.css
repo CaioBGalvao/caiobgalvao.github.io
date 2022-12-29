@@ -1,0 +1,25 @@
+@media (max-width: 425px) {
+  .container-sobre-mim {
+    width: 95vw;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .container-sobre-mim {
+    width: 90vw;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-sobre-mim {
+    width: 50vw;
+    font-size: 1.2rem;
+  }
+}
+
+.container-sobre-mim {
+  text-align: justify;
+  font-family: Helvetica, Verdana, sans-serif;
+}
