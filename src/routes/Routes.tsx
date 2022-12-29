@@ -1,6 +1,6 @@
 import {
   createRoutesFromElements,
-  createBrowserRouter,
+  createHashRouter,
   Route,
 } from "react-router-dom";
 
@@ -10,7 +10,7 @@ import AboutMe from '../pages/AboutMe';
 import Contacts from '../pages/Contacts';
 import NotFound from '../pages/NotFound';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
       path="/"
