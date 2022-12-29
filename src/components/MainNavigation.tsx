@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './MainNavigation.css';
@@ -13,26 +13,18 @@ function MainNavigation() {
       <Navbar.Toggle className='togle-button' aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='justify-content-center'>
-          <Nav.Link>
-            <Link to='/' className='nav-button'>
-              <span className='hover-underline-animation'> Home </span>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to='/aboutMe' className='nav-button'>
-              <span className='hover-underline-animation'> Sobre Mim </span>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to='/contact' className='nav-button'>
-              <span className='hover-underline-animation'> Contatos </span>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to='projects' className='nav-button'>
-              <span className='hover-underline-animation'> Projetos </span>
-            </Link>
-          </Nav.Link>
+          <NavLink to='/' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Home </span>
+          </NavLink>
+          <NavLink to='/aboutMe' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Sobre Mim </span>
+          </NavLink>
+          <NavLink to='/contact' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Contatos </span>
+          </NavLink>
+          <NavLink to='projects' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Projetos </span>
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
