@@ -9,13 +9,19 @@ import SobreMim from '../components/SobreMim';
 
 function AboutMe() {
   return (
-    <Container fluid className='container-about bg-light'>
-      <h1 className='mt-5'>&lt; Sobre Mim &gt;</h1>
-      <SobreMim />
-      <Link to='/contact' className='mb-5'>
-        <Button variant='dark'>Me envie um E-mail</Button>
-      </Link>
-    </Container >
+    <>
+      <Helmet>
+        <title>Sobre Mim - Portifólio</title>
+        <meta name='description' content='Página com informações sobre mim.' />
+      </Helmet>
+      <Container fluid className='container-about bg-light'>
+        <h1 className='mt-5'>&lt; Sobre Mim &gt;</h1>
+        <SobreMim />
+        <Link to='/contact' className='mb-5'>
+          <Button variant='dark'>Me envie um E-mail</Button>
+        </Link>
+      </Container >
+    </>
   );
 }
 
