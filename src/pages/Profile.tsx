@@ -22,7 +22,7 @@ function Profile() {
           <Button variant='dark'>Me envie um E-mail</Button>
         </Link>
         <div className='d-flex justify-content-evenly mt-5'>
-          <a className='mx-2' href='https://www.linkedin.com/in/caio-galvao/' target='_blank' rel='noreferrer'>
+          <a className='mx-2' href='https://www.linkedin.com/in/caiobgalvao' target='_blank' rel='noreferrer'>
             <img className='sm' src={linkedin} alt='LinkedIn icon' />
           </a>
           <a href='https://github.com/CaioBGalvao' target='_blank' rel='noreferrer'>
