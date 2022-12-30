@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import './AboutMe.css';
+
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import React from 'react';
 import SobreMim from '../components/SobreMim';
 
 function AboutMe() {

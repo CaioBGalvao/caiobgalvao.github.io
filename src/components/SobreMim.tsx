@@ -1,7 +1,8 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Accordion from 'react-bootstrap/Accordion';
 import './SobreMim.css'
+
+import Accordion from 'react-bootstrap/Accordion';
+import Container from 'react-bootstrap/Container';
+import React from 'react';
 
 function SobreMim() {
   return (

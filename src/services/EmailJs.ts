@@ -1,5 +1,5 @@
-import emailjs from '@emailjs/browser';
 import IsendEmail from '../Interfaces/IsendEmail';
+import emailjs from '@emailjs/browser';
 
 const serviceId = import.meta.env.VITE_APP_SERVICE_ID
 const templateId = import.meta.env.VITE_APP_TEMPLATE_ID

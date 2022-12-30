@@ -1,14 +1,14 @@
 import {
-  createRoutesFromElements,
-  createHashRouter,
   Route,
+  createHashRouter,
+  createRoutesFromElements,
 } from "react-router-dom";
 
-import RootLayout from '../components/RootLayout';
-import Profile from '../pages/Profile';
 import AboutMe from '../pages/AboutMe';
 import Contacts from '../pages/Contacts';
 import NotFound from '../pages/NotFound';
+import Profile from '../pages/Profile';
+import RootLayout from '../components/RootLayout';
 
 const router = createHashRouter(
   createRoutesFromElements(
