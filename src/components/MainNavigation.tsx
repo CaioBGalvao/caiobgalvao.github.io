@@ -24,8 +24,11 @@ function MainNavigation() {
           <NavLink to='/contact' className='nav-button nav-link'>
             <span className='hover-underline-animation'> Contatos </span>
           </NavLink>
-          <NavLink to='projects' className='nav-button nav-link'>
+          <NavLink to='/projects' className='nav-button nav-link'>
             <span className='hover-underline-animation'> Projetos </span>
+          </NavLink>
+          <NavLink to='/infosite' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Sobre o site </span>
           </NavLink>
         </Nav>
       </Navbar.Collapse>

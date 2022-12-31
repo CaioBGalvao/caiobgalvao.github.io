@@ -55,7 +55,7 @@ function Contacts() {
         <title>Contatos - Portifólio</title>
         <meta name='description' content='Página de contatos com formulário de envio de e-mail.' />
       </Helmet>
-      <Container fluid className='container-contacts bg-light'>
+      <Container fluid className='container-contacts bg-light '>
         <h1>&lt; Contatos &gt;</h1>
         {showAlert && (
           <Alert variant='danger'>Por favor, preencha todos os campos.</Alert>
