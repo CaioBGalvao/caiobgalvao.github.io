@@ -1,13 +1,15 @@
+import './Contacts.css';
+
 import React, { useState } from 'react';
+
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
+import { Helmet } from 'react-helmet';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import sendEmail from '../services/EmailJs';
-import './Contacts.css';
-
 
 function Contacts() {
   const [name, setName] = useState('');
@@ -48,57 +50,63 @@ function Contacts() {
   };
 
   return (
-    <Container fluid className='container-contacts bg-light'>
-      <h1>&lt; Contatos &gt;</h1>
-      {showAlert && (
-        <Alert variant='danger'>Por favor, preencha todos os campos.</Alert>
-      )}
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className='mb-3' controlId='formName'>
-          <Form.Label>Seu nome:</Form.Label>
-          <Form.Control
-            type='input'
-            placeholder='Caio Galvão'
-            value={name}
-            onChange={event => {
-              setName(event.target.value);
-            }}
-          />
-        </Form.Group>
+    <>
+      <Helmet>
+        <title>Contatos - Portifólio</title>
+        <meta name='description' content='Página de contatos com formulário de envio de e-mail.' />
+      </Helmet>
+      <Container fluid className='container-contacts bg-light '>
+        <h1>&lt; Contatos &gt;</h1>
+        {showAlert && (
+          <Alert variant='danger'>Por favor, preencha todos os campos.</Alert>
+        )}
+        <Form onSubmit={handleSubmit}>
+          <Form.Group className='mb-3' controlId='formName'>
+            <Form.Label>Seu nome:</Form.Label>
+            <Form.Control
+              type='input'
+              placeholder='Caio Galvão'
+              value={name}
+              onChange={event => {
+                setName(event.target.value);
+              }}
+            />
+          </Form.Group>
 
-        <Form.Group className='mb-3' controlId='formBasicEmail'>
-          <Form.Label>Endereço de E-mail</Form.Label>
-          <Form.Control
-            type='email'
-            placeholder='caio@galvao.com'
-            value={email}
-            onChange={event => {
-              setEmail(event.target.value);
-            }}
-          />
-          <Form.Text className='text-muted'>
-            Não irei compartilhar esse e-mail com ninguem.
-          </Form.Text>
-        </Form.Group>
+          <Form.Group className='mb-3' controlId='formBasicEmail'>
+            <Form.Label>Endereço de E-mail</Form.Label>
+            <Form.Control
+              type='email'
+              placeholder='caio@galvao.com'
+              value={email}
+              onChange={event => {
+                setEmail(event.target.value);
+              }}
+            />
+            <Form.Text className='text-muted'>
+              Não irei compartilhar esse e-mail com ninguem.
+            </Form.Text>
+          </Form.Group>
 
-        <Form.Group className='mb-3' controlId='formMenssage'>
-          <Form.Label>Deixe sua mensagem aqui:</Form.Label>
-          <Form.Control
-            as='textarea'
-            rows={5}
-            value={message}
-            onChange={event => {
-              setMessage(event.target.value);
-            }}
-          />
-        </Form.Group>
-        <OverlayTrigger show={showSuccess} placement="top" overlay={popover}>
-          <Button className='mb-3' variant='dark' type='submit'>
-            Enviar
-          </Button>
-        </OverlayTrigger>
-      </Form>
-    </Container >
+          <Form.Group className='mb-3' controlId='formMenssage'>
+            <Form.Label>Deixe sua mensagem aqui:</Form.Label>
+            <Form.Control
+              as='textarea'
+              rows={5}
+              value={message}
+              onChange={event => {
+                setMessage(event.target.value);
+              }}
+            />
+          </Form.Group>
+          <OverlayTrigger show={showSuccess} placement="top" overlay={popover}>
+            <Button className='mb-3' variant='dark' type='submit'>
+              Enviar
+            </Button>
+          </OverlayTrigger>
+        </Form>
+      </Container >
+    </>
   );
 }
 

@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import './MainNavigation.css';
+
+import { Link, NavLink } from 'react-router-dom';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
 
 // https://uiverse.io/alexmaracinaru/empty-moose-12
 
@@ -22,8 +24,11 @@ function MainNavigation() {
           <NavLink to='/contact' className='nav-button nav-link'>
             <span className='hover-underline-animation'> Contatos </span>
           </NavLink>
-          <NavLink to='projects' className='nav-button nav-link'>
+          <NavLink to='/projects' className='nav-button nav-link'>
             <span className='hover-underline-animation'> Projetos </span>
+          </NavLink>
+          <NavLink to='/infosite' className='nav-button nav-link'>
+            <span className='hover-underline-animation'> Sobre o site </span>
           </NavLink>
         </Nav>
       </Navbar.Collapse>

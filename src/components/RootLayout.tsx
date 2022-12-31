@@ -1,8 +1,8 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import MainNavigation from './MainNavigation';
 import './RootLayout.css';
 
+import MainNavigation from './MainNavigation';
+import { Outlet } from 'react-router-dom';
+import React from 'react';
 
 function RootLayout() {
   return (

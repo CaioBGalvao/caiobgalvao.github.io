@@ -1,0 +1,18 @@
+.container-geral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-tech h1 {
+  font-family: "Space Mono", monospace;
+  font-size: clamp(1.5em, 1.5em + 1.5vw, 2em);
+}
+
+.row-cards {
+  width: 50vw;
+  flex-wrap: wrap;
+}
