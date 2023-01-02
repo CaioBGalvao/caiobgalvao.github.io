@@ -14,12 +14,12 @@ function SobreOSite() {
         <title>Tech Stack - Portifólio</title>
         <meta name='description' content='Página de informações das libs usadas no site.' />
       </Helmet>
-      <Container fluid className='container-geral'>
+      <Container fluid className='container-geral mt-5'>
         <div>
           <h1>&lt; Sobre o site &gt;</h1>
-          <h2>Esse site foi contruido com:</h2>
+          <h2>Esse site foi construído com:</h2>
         </div>
-        <Row className='row-cards mt-3 mb-3'>
+        <Row xxl={4} xl={4} lg={3} md={2} sm={1} className='row-cards mt-3 mb-3 '>
           {
             techs.map((stack, index) => (
               <StackCard

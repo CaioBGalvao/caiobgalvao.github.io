@@ -1,0 +1,7 @@
+.column {
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 232px;
+}
