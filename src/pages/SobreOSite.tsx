@@ -19,9 +19,11 @@ function SobreOSite() {
           <h1>&lt; Sobre o site &gt;</h1>
           <h2>Esse site foi construído com:</h2>
         </div>
-        <Row xxl={4} xl={4} lg={3} md={2} sm={1} className='row-cards mt-3 mb-3 '>
-          {
-            techs.map((stack, index) => (
+        <Row xxl={4} xl={4} lg={3} md={2} sm={1} className='mt-3 mb-3'>
+          {techs.map((stack, index) => {
+            console.log('stack:', stack);
+            console.log('index:', index);
+            return (
               <StackCard
                 key={index + 1}
                 src={stack.src}
@@ -29,8 +31,8 @@ function SobreOSite() {
                 text={stack.text}
                 link={stack.src}
               />
-            ))
-          }
+            );
+          })}
         </Row>
       </Container>
     </>

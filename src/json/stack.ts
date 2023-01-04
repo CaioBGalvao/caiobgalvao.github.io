@@ -1,22 +1,23 @@
 import EmailJs from "../assets/svg/EmailJS.svg"
 import Helmet from "../assets/jpeg/helmet.jpeg"
 import RRD6 from "../assets/svg/react-router-mark-color.svg"
+import ReactBootstrap from "../assets/svg/RBS.svg"
 
 const techs = [
   {
-    "src": "https://vitejs.dev/logo-with-shadow.png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
     "title": "Vite Js",
     "text": "Next Generation Frontend Tooling",
     "link": "https://vitejs.dev/"
   },
   {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     "title": "React",
     "text": "Uma biblioteca JavaScript para criar interfaces de usuário",
     "link": "https://pt-br.reactjs.org/"
   },
   {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
     "title": "TypeScript",
     "text": "TypeScript is JavaScript with syntax for types.",
     "link": "https://www.typescriptlang.org/"
@@ -28,7 +29,7 @@ const techs = [
     "link": "https://reactrouter.com/"
   },
   {
-    "src": "https://crowdcast-prod.imgix.net/-KHhIzuATU2K4OVPd2sP/event-cover-5388?w=800",
+    "src": ReactBootstrap,
     "title": "React Bootstrap 2.7",
     "text": "The most popular front-end framework Rebuilt for React.",
     "link": "https://react-bootstrap.github.io/"
@@ -40,7 +41,7 @@ const techs = [
     "link": "https://www.npmjs.com/package/react-helmet"
   },
   {
-    "src": "https://icons.getbootstrap.com/assets/img/icons-hero.png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
     "title": "Bootstrap 5 Icons",
     "text": "The most popular front-end framework Rebuilt for React.",
     "link": "https://react-bootstrap.github.io/"
