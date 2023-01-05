@@ -8,6 +8,7 @@ import AboutMe from '../pages/AboutMe';
 import Contacts from '../pages/Contacts';
 import NotFound from '../pages/NotFound';
 import Profile from '../pages/Profile';
+import Projetos from '../pages/Projetos';
 import RootLayout from '../components/RootLayout';
 import SobreOSite from '../pages/SobreOSite';
 
@@ -30,7 +31,7 @@ const router = createHashRouter(
         />
         <Route
           path="/projects"
-          element={<NotFound />}
+          element={<Projetos />}
         />
         <Route
           path="/infosite"
