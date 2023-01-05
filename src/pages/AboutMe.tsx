@@ -18,7 +18,7 @@ function AboutMe() {
         <h1 className='mt-5'>&lt; Sobre Mim &gt;</h1>
         <SobreMim />
         <Link to='/contact' className='mb-5'>
-          <Button variant='dark'>Me envie um E-mail</Button>
+          <Button variant='dark'>Entre em contato</Button>
         </Link>
       </Container >
     </>
