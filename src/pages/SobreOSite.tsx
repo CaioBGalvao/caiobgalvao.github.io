@@ -27,7 +27,7 @@ function SobreOSite() {
                 src={stack.src}
                 title={stack.title}
                 text={stack.text}
-                link={stack.src}
+                link={stack.link}
               />
             );
           })}
