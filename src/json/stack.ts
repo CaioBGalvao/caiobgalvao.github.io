@@ -44,7 +44,7 @@ const techs = [
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
     "title": "Bootstrap 5 Icons",
     "text": "The most popular front-end framework Rebuilt for React.",
-    "link": "https://react-bootstrap.github.io/"
+    "link": "https://icons.getbootstrap.com/"
   },
   {
     "src": EmailJs,
